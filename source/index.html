@@ -8,6 +8,93 @@
   <title>Markup Test</title>
 </head>
 <body>
-  <p>Hello</p>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__column-left">
+        <a class="page-header__logo-link" href="#">
+          <img class="page-header__logo-image" src="img/icon-logo.svg" alt="Логотип" width="24" height="24">
+        </a>
+        <form class="page-header__form form-search" method="get">
+          <fieldset class="form-search__wrapper">
+            <input class="form-search__input" id="search" type="search" name="search" placeholder="поиск">
+            <label class="visually-hidden" for="search">Поиск</label>
+          </fieldset>
+        </form>
+      </div>
+      <div class="page-header__column-right">
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Деньги</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Услуги</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="page-header__button-add">
+          <span class="visually-hidden">Добавить</span>
+        </button>
+        <button class="page-header__button-notice page-header__button-notice--have">
+          <span class="visually-hidden">Уведомления</span>
+        </button>
+        <a class="page-header__title" href="#">ООО «Родные просторы»</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="order">
+      <h2 class="order__title">Платёжное поручение № 5241234 от 23.09.2015</h2>
+      <p class="order__account">- 23 500,00 ₽</p>
+      <p class="order__description"><span>со счета:</span>Расчётный счет (***012345)</p>
+      <p class="order__date">исполнен,<span>21 июня 15:33</span></p>
+
+      <div class="order__card card">
+        <div class="card__content">
+          <h3 class="card__title">ООО "Родные просторы"</h3>
+          <ul class="card__list">
+            <li class="card__item">
+              <p class="card__requisite">ИНН: 22341497819132</p>
+            </li>
+            <li class="card__item">
+              <p class="card__requisite">Банк: ОАО Сбербанк</p>
+            </li>
+            <li class="card__item">
+              <p class="card__requisite">БИК: 2352362365</p>
+            </li>
+            <li class="card__item">
+              <p class="card__requisite">Счет: 408020109700100000305</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="order__features">
+          <table class="features">
+            <tr class="features__list">
+              <td class="features__item">Высокая финансовая устойчивость</td>
+              <td class="features__item">88</td>
+            </tr>
+            <tr class="features__list">
+              <td class="features__item">Высокая благонадёжность</td>
+              <td class="features__item">100</td>
+            </tr>
+            <tr class="features__list">
+              <td class="features__item">Кредитоспособность 44,5 млрд ₽</td>
+              <td class="features__item">1 класс</td>
+            </tr>
+          </table>
+        </div>
+        <div class="card__description">
+          <p class="card__description-text">Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00₽</p>
+        </div>
+      </div>
+
+      <p class="order__commission">Комиссия банка: 70р.<br>Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.</p>
+    </section>
+  </main>
 </body>
 </html>
