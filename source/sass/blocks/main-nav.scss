@@ -14,6 +14,8 @@
 }
 
 .main-nav__link {
+  position: relative;
+
   font-family: 'Roboto', 'Tahoma', sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -21,6 +23,23 @@
   font-weight: 300;
 
   opacity: 0.8;
+
+  &--services {
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 6px;
+      right: -13px;
+
+      width: 8px;
+      height: 4px;
+
+      background-image: url('../img/icon-arrow-down.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 
   &:hover {
     padding-bottom: 16px;
