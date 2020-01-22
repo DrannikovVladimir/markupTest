@@ -1,0 +1,14 @@
+.page-main {
+  display: flex;
+}
+
+.page-main__column-left {
+  background-color: #828282;
+}
+
+.page-main__column-right {
+  width: 900px;
+  margin-left: auto;
+
+  box-shadow: -8px 9px 25px rgba(49, 68, 93, 0.2);
+}

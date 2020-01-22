@@ -1,0 +1,66 @@
+.card {
+  width: 545px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card__content {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 30px;
+
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.390682),
+    0px 3px 10px rgba(0, 0, 0, 0.0869282);
+}
+
+.card__content-left {
+  width: 230px;
+  margin-right: 70px;
+}
+
+.card__content-right {
+  width: 165px;
+}
+
+.card__title {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 13px;
+
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.card__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.card__requisite {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.card__description-wrapper {
+  padding: 20px 30px;
+
+  background-color: #F2F2F2;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102),
+    0px 4px 15px rgba(0, 0, 0, 0.0869282),
+    0px 2px 3px rgba(0, 0, 0, 0.0651891);
+}
+
+.card__description-text {
+  width: 470px;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
