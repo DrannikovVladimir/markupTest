@@ -1,4 +1,6 @@
 .order__title-wrapper {
+  position: relative;
+
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -85,7 +87,7 @@
 .order__commission {
   width: 545px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 
   font-size: 12px;
   line-height: 16px;
