@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+  />
+  <link rel="stylesheet" href="css/style.css"/>
   <title>Markup Test</title>
 </head>
 <body>
@@ -56,72 +60,77 @@
           </button>
           <h2 class="order__title">Платёжное поручение № 5241234 от 23.09.2015</h2>
         </div>
-        <p class="order__account">– 23 500,00 ₽</p>
-        <p class="order__description"><span>со счета:</span>Расчётный счет (***012345)</p>
-        <div class="order__date-wrapper">
-          <p class="order__date">исполнен,<span>21 июня 15:33</span></p>
-        </div>
+        <div class="order__wrapper" id="content">
 
-        <div class="order__card card">
-          <div class="card__corner"></div>
-          <div class="card__content">
-            <div class="card__content-left">
-              <h3 class="card__title">ООО "Родные просторы"</h3>
-              <ul class="card__list">
-                <li class="card__item">
-                  <p class="card__requisite">ИНН: 22341497819132</p>
-                </li>
-                <li class="card__item">
-                  <p class="card__requisite">Банк: ОАО Сбербанк</p>
-                </li>
-                <li class="card__item">
-                  <p class="card__requisite">БИК: 2352362365</p>
-                </li>
-                <li class="card__item">
-                  <p class="card__requisite">Счет: 408020109700100000305</p>
-                </li>
-              </ul>
+          <p class="order__account">– 23 500,00 ₽</p>
+          <p class="order__description"><span>со счета:</span>Расчётный счет (***012345)</p>
+          <div class="order__date-wrapper">
+            <p class="order__date">исполнен,<span>21 июня 15:33</span></p>
+          </div>
+
+          <div class="order__card card">
+            <div class="card__corner"></div>
+            <div class="card__content">
+              <div class="card__content-left">
+                <h3 class="card__title">ООО "Родные просторы"</h3>
+                <ul class="card__list">
+                  <li class="card__item">
+                    <p class="card__requisite">ИНН: 22341497819132</p>
+                  </li>
+                  <li class="card__item">
+                    <p class="card__requisite">Банк: ОАО Сбербанк</p>
+                  </li>
+                  <li class="card__item">
+                    <p class="card__requisite">БИК: 2352362365</p>
+                  </li>
+                  <li class="card__item">
+                    <p class="card__requisite">Счет: 408020109700100000305</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card__content-right">
+                <table class="order__features-table.features">
+                  <tr class="features__list">
+                    <td class="features__item features__item--text">
+                      <span>Высокая финансовая устойчивость</span>
+                    </td>
+                    <td class="features__item">
+                      <div class="features__graph">88</div>
+                    </td>
+                  </tr>
+                  <tr class="features__list">
+                    <td class="features__item features__item--text">
+                      <span>Высокая благонадёжность</span>
+                    </td>
+                    <td class="features__item">
+                      <div class="features__graph">100</div>
+                    </td>
+                  </tr>
+                  <tr class="features__list">
+                    <td class="features__item features__item--text">
+                      <span>Кредитоспособность 44,5 млрд ₽</span>
+                    </td>
+                    <td class="features__item">
+                      <div class="features__class">
+                        <span class="features__class-value">1</span>
+                        <span class="features__class-text">Класс</span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
 
-            <div class="card__content-right">
-              <table class="order__features-table.features">
-                <tr class="features__list">
-                  <td class="features__item features__item--text">
-                    <span>Высокая финансовая устойчивость</span>
-                  </td>
-                  <td class="features__item">
-                    <div class="features__graph">88</div>
-                  </td>
-                </tr>
-                <tr class="features__list">
-                  <td class="features__item features__item--text">
-                    <span>Высокая благонадёжность</span>
-                  </td>
-                  <td class="features__item">
-                    <div class="features__graph">100</div>
-                  </td>
-                </tr>
-                <tr class="features__list">
-                  <td class="features__item features__item--text">
-                    <span>Кредитоспособность 44,5 млрд ₽</span>
-                  </td>
-                  <td class="features__item">
-                    <div class="features__class">
-                      <span class="features__class-value">1</span>
-                      <span class="features__class-text">Класс</span>
-                    </div>
-                  </td>
-                </tr>
-              </table>
+            <div class="card__description-wrapper">
+              <p class="card__description-text">Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00₽</p>
             </div>
           </div>
 
-          <div class="card__description-wrapper">
-            <p class="card__description-text">Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00₽</p>
-          </div>
+          <p class="order__commission">Комиссия банка: 70р.<br>Размер комиссии рассчитан автоматически
+            согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется
+            после передачи платежного документа на обработку в банк.</p>
         </div>
-
-        <p class="order__commission">Комиссия банка: 70р.<br>Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.</p>
 
         <footer class="order__footer footer">
           <div class="footer__wrapper">
@@ -145,6 +154,10 @@
     </div>
   </main>
 
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script type="text/javascript">
+    new SimpleBar(document.querySelector('#content'));
+  </script>
   <script type="text/javascript">
     var graph = document.querySelectorAll('.features__graph');
 
@@ -170,6 +183,14 @@
       svg.appendChild(circle);
       item.appendChild(svg);
       item.insertAdjacentElement('afterbegin', span);
+    });
+  </script>
+  <script type="text/javascript">
+    var orderTitle = document.querySelector('.order__title-wrapper');
+    var orderTitleButtonClose = orderTitle.querySelector('.order__button-close');
+
+    orderTitleButtonClose.addEventListener('click', function(evt) {
+      orderTitle.parentNode.removeChild(orderTitle);
     });
   </script>
 </body>
