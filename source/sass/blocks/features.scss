@@ -1,9 +1,11 @@
 .features__item {
 
   &--text {
+    padding-top: 8px;
     padding-right: 10px;
     text-align: center;
     line-height: 0.8;
+    vertical-align: top;
 
     span {
       border-bottom: 1px dotted #2773b9;
@@ -14,27 +16,53 @@
 }
 
 .features__graph {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  border: 2px solid $accent-color;
+  position: relative;
+}
+
+.features__value {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1000;
+}
+
+.features__bar {
+  width: 50px;
+  height: 50px;
+  fill: #FFFFFF;
+  stroke: $accent-color;
+  stroke-width: 2px;
+
+  transform: rotate(-90deg);
+  background-color: lightgray;
   border-radius: 50%;
-
-  &--class {
-    flex-direction: column;
-    justify-content: flex-start;
-
-    font-size: 24px;
-    color: #FFFFFF;
-
-    background-color: $accent-color
-  }
 }
 
 .features__class {
-  display: block;
-  font-size: 8px;
-  font-weight: 300;
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  color: #FFFFFF;
+  text-align: center;
+
+  background-color: $accent-color;
+}
+
+.features__class-value {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.features__class-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  font-size: 10px;
+  line-height: 10px;
 }

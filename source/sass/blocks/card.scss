@@ -1,7 +1,56 @@
 .card {
+  position: relative;
+
   width: 545px;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 30px;
+    height: 28px;
+
+    background-image: url('../img/icon-corner.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: 100;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: -21px;
+    right: -20px;
+
+    width: 40px;
+    height: 40px;
+    border-bottom: 1px solid lightgray;
+
+    background-color: #FFFFFF;
+    transform: rotate(43deg);
+
+    z-index: 99;
+  }
+}
+
+.card__corner {
+  position: absolute;
+  top: 0;
+  right: -33px;
+
+  width: 70px;
+  height: 20px;
+  background-color: #FFFFFF;
+  opacity: 0.6;
+
+  transform: rotate(44deg);
 }
 
 .card__content {

@@ -63,6 +63,7 @@
         </div>
 
         <div class="order__card card">
+          <div class="card__corner"></div>
           <div class="card__content">
             <div class="card__content-left">
               <h3 class="card__title">ООО "Родные просторы"</h3>
@@ -89,9 +90,7 @@
                     <span>Высокая финансовая устойчивость</span>
                   </td>
                   <td class="features__item">
-                    <div class="features__graph">
-                      <span>88</span>
-                    </div>
+                    <div class="features__graph">88</div>
                   </td>
                 </tr>
                 <tr class="features__list">
@@ -99,9 +98,7 @@
                     <span>Высокая благонадёжность</span>
                   </td>
                   <td class="features__item">
-                    <div class="features__graph">
-                      <span>100</span>
-                    </div>
+                    <div class="features__graph">100</div>
                   </td>
                 </tr>
                 <tr class="features__list">
@@ -109,9 +106,9 @@
                     <span>Кредитоспособность 44,5 млрд ₽</span>
                   </td>
                   <td class="features__item">
-                    <div class="features__graph features__graph--class">
-                      <span>1</span>
-                      <span class="features__class">Класс</span>
+                    <div class="features__class">
+                      <span class="features__class-value">1</span>
+                      <span class="features__class-text">Класс</span>
                     </div>
                   </td>
                 </tr>
@@ -147,5 +144,33 @@
       </section>
     </div>
   </main>
+
+  <script type="text/javascript">
+    var graph = document.querySelectorAll('.features__graph');
+
+    Array.from(graph).forEach((item) => {
+      var value = item.textContent;
+      var NS = 'http://www.w3.org/2000/svg';
+      var svg = document.createElementNS(NS, 'svg');
+      var circle = document.createElementNS(NS, 'circle');
+      var title = document.createElementNS(NS, 'title');
+      var span = document.createElement('span');
+      span.textContent = value;
+      span.classList.add('features__value');
+      console.log(span);
+      circle.setAttribute('r', 24);
+      circle.setAttribute('cx', 25);
+      circle.setAttribute('cy', 25);
+      circle.setAttribute('stroke-dasharray', value * 1.51 + ' 151');
+      svg.setAttribute('viewBox', '0 0 50 50');
+      title.textContent = item.textContent;
+      item.textContent = '';
+      svg.classList.add('features__bar');
+      svg.appendChild(title);
+      svg.appendChild(circle);
+      item.appendChild(svg);
+      item.insertAdjacentElement('afterbegin', span);
+    });
+  </script>
 </body>
 </html>
